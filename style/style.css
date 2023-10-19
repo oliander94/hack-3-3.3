@@ -1,0 +1,74 @@
+/*-------------------- Flex styles----------------------- */
+
+*:root{
+    --clr-wine: #AB2849;
+    --clr-blue: #93B5C9;
+    --clr-white: #fafafa;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    height: 15vh;
+    background-color: var(--clr-blue);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75vh;
+}
+
+main section{
+    height: 23vh;
+    width: 100%;
+    gap: 2vh
+    background-color: var(--clr-wine);
+}
+
+main .container{
+    height: 50vh;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container>div{
+    height: 10.5vh;
+    width: 100%;
+    margin-bottom: 2vh;
+
+}
+.container>div:nth-child(even){
+    background-color: var(--clr-white);
+    display: flex;
+    justify-content: space-between;
+}
+
+.container>div:nth-child(odd){
+    background-color: var(--clr-wine);
+}
+
+
+.bloc2, .bloc4{
+    width: 49.5%;
+    height: 100%;
+    background-color: var(--clr-wine);
+}
+
+
+
+footer{
+    bottom: 1vh;
+    width: 100%;
+    height: 9vh;
+    background-color: var(--clr-wine);
+}
